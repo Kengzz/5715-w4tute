@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="logic.js"></script>
+	</head>
+	<body>
+		<h1>Weather Observation App</h1>
+		<label for="Date">Date:</label>
+		<input
+			id="Date"
+			name="Date"
+			type="date"
+			placeholder="Date here"
+		/>
+		<div>
+		<label for="Minimum_temperature">Minimum temperature (deg. C):</label>
+		<input
+			id="Minimum_temperature"
+			name="Minimum_temperature"
+			type="text"
+			placeholder="new entry here"
+		/>
+		<div>
+			<label for="Maximum_temperature">Maximum temperature (deg. C):</label>
+			<input
+				id="Maximum_temperature"
+				name="Maximum_temperature"
+				type="text"
+				placeholder="new entry here"
+			/>
+		<div>
+			<label for="Conditions">Conditions:</label>
+			<input
+					id="Conditions"
+					name="Conditions"
+					type="text"
+					placeholder="new entry here"
+			/>
+		<div>
+		<button onclick="userDidClickCreate()">Create</button>
+		<button onclick="downloadJSON()">Download</button>
+		<hr />
+
+		<h2>Upload existing file</h2>
+		<input id="fileUploader" type="file" />
+
+		<hr />
+
+        </div>
+		<table id="tasksTable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Date</th>
+					<th>Minimum temperature</th>
+					<th>Maximum temperature</th>
+					<th>Conditions</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyForTasks">
+			</tbody>
+		</table>
+	</body>
+</html>
